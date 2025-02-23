@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+         h1{
+        text-align: center;
+        background-color: yellow;
+        color: red;
+        font-size: 50px;
+        font-weight: bolder;
+      }
+    .container{
+        border: 2px red solid;
+        height: 30vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .box,.box1,.box2{
+        border: 2px black solid;
+        background-color: pink;
+        height: 120px;
+        width: 150px;
+        margin: 20px;
+        transition: 3s;
+    }
+    .box:hover{
+        cursor: pointer;
+        background-color: blue;
+
+    }
+    .box1{
+        height: 180px;
+        background-color: red;
+        transition: 5s;
+   
+    }
+    .box1:hover{
+        cursor: pointer;
+        border-radius: 50%;
+        background-color: yellow;
+    }
+    .box2{
+        background-color: yellow;
+        border-radius: 50%;
+        transition: 1s 1s;
+    }
+    .box2:hover{
+        cursor: pointer;
+        border-radius: 0;
+        background-color: red;
+    }
+    .box3{
+        height: 150px;
+        width: 150px;
+        border: 2px red solid;
+        margin: 0 auto;
+        margin-top: 20px;
+        background-color: rgb(32, 226, 32);
+        transition: margin-top 2s ease 0.2s;
+    }
+    .box3:hover{
+        background-color: blue;
+        cursor: pointer;
+        margin-top: 400px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Transition</h1>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+    <div class="box3"></div>
+</body>
+</html>
